@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.app {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3157d5;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.subtitle {
+  color: #667085;
+  margin: 14px auto 0;
+  max-width: 580px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.student-card {
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: 0 12px 35px rgba(30, 52, 90, 0.08);
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: #3157d5;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.student-info h2 {
+  margin: 8px 0 12px;
+}
+
+.student-info p {
+  margin: 8px 0;
+  color: #536078;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3157d5;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
